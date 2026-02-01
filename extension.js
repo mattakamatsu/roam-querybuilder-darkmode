@@ -1,8 +1,12 @@
 /**
- * Roam Query Builder Dark Mode Compatibility
+ * Roam Styling Extension
  * Compatible with Roam Studio theming system
  *
- * Installation: Paste this code into a roam/js code block in Roam Research
+ * Features:
+ * - Query Builder dark mode compatibility
+ * - Roam embed styling (light & dark mode)
+ *
+ * Installation: Load as extension from folder, or paste into a roam/js code block
  *
  * This script injects CSS that uses Roam Studio's CSS variables for seamless
  * theme integration. It works with both light and dark modes.
@@ -10,11 +14,11 @@
 (function() {
   'use strict';
 
-  const STYLE_ID = 'roamjs-qb-darkmode-styles';
+  const STYLE_ID = 'roam-styling-extension';
 
   // Prevent duplicate injection
   if (document.getElementById(STYLE_ID)) {
-    console.log('[QB Dark Mode] Styles already loaded');
+    console.log('[Roam Styling] Styles already loaded');
     return;
   }
 
@@ -409,6 +413,132 @@
 .roamjs-query-page .flex.justify-between.items-center.mb-0 i {
   color: var(--cl-gray-400, #9ca3af);
 }
+
+/* ============================================
+   Roam Embed Styles (Light & Dark Mode)
+   ============================================ */
+
+/* --- Main Embed Container (Light Mode Default) --- */
+.rm-embed-container {
+  background-color: var(--bc-embed, var(--cl-gray-100, #f3f4f6)) !important;
+  border-radius: 4px;
+  border-left: 3px solid var(--cl-blue-500, #3b82f6);
+  margin: 8px 0;
+  padding: 8px 12px;
+}
+
+/* Dark mode override for embeds */
+.bp4-dark .rm-embed-container,
+.bp5-dark .rm-embed-container,
+[data-color-mode="dark"] .rm-embed-container {
+  background-color: var(--bc-embed, var(--cl-gray-850, #1c1c1c)) !important;
+  border-left-color: var(--cl-blue-400, #60a5fa);
+}
+
+/* --- Page Embeds --- */
+.rm-embed--page {
+  background-color: var(--bc-embed-page, var(--cl-gray-100, #f3f4f6)) !important;
+  border: 1px solid var(--cl-gray-200, #e5e7eb);
+  border-left: 3px solid var(--cl-blue-500, #3b82f6);
+  border-radius: 4px;
+}
+
+.bp4-dark .rm-embed--page,
+.bp5-dark .rm-embed--page,
+[data-color-mode="dark"] .rm-embed--page {
+  background-color: var(--bc-embed-page, var(--cl-gray-850, #1c1c1c)) !important;
+  border-color: var(--cl-gray-700, #374151);
+  border-left-color: var(--cl-blue-400, #60a5fa);
+}
+
+/* --- Embed Content Text --- */
+.rm-embed-container .rm-block-text,
+.rm-embed__content {
+  color: var(--co-main, inherit) !important;
+}
+
+/* --- Nested Embeds Level 2 (Light Mode) --- */
+.rm-embed-container .rm-embed-container {
+  background-color: var(--bc-embed__container-2, var(--cl-gray-200, #e5e7eb)) !important;
+  border-left-color: var(--cl-gray-400, #9ca3af);
+}
+
+/* Dark mode nested embeds */
+.bp4-dark .rm-embed-container .rm-embed-container,
+.bp5-dark .rm-embed-container .rm-embed-container,
+[data-color-mode="dark"] .rm-embed-container .rm-embed-container {
+  background-color: var(--bc-embed__container-2, var(--cl-gray-800, #1f2937)) !important;
+  border-left-color: var(--cl-gray-500, #6b7280);
+}
+
+/* --- Nested Embeds Level 3+ --- */
+.rm-embed-container .rm-embed-container .rm-embed-container {
+  background-color: var(--bc-embed__container-3, var(--cl-gray-300, #d1d5db)) !important;
+  border-left-color: var(--cl-gray-500, #6b7280);
+}
+
+.bp4-dark .rm-embed-container .rm-embed-container .rm-embed-container,
+.bp5-dark .rm-embed-container .rm-embed-container .rm-embed-container,
+[data-color-mode="dark"] .rm-embed-container .rm-embed-container .rm-embed-container {
+  background-color: var(--bc-embed__container-3, var(--cl-gray-750, #26272b)) !important;
+  border-left-color: var(--cl-gray-600, #4b5563);
+}
+
+/* --- Embed Controls (expand/collapse) --- */
+.rm-embed-margin-action {
+  color: var(--cl-gray-500, #6b7280);
+}
+
+.rm-embed-margin-action:hover {
+  color: var(--cl-gray-700, #374151);
+}
+
+.bp4-dark .rm-embed-margin-action:hover,
+.bp5-dark .rm-embed-margin-action:hover,
+[data-color-mode="dark"] .rm-embed-margin-action:hover {
+  color: var(--cl-gray-300, #d1d5db);
+}
+
+/* --- Embed Path/Breadcrumb --- */
+.rm-embed-path__inner {
+  background-color: var(--cl-gray-100, #f3f4f6);
+  border-radius: 3px;
+  padding: 2px 6px;
+}
+
+.bp4-dark .rm-embed-path__inner,
+.bp5-dark .rm-embed-path__inner,
+[data-color-mode="dark"] .rm-embed-path__inner {
+  background-color: var(--cl-gray-800, #1f2937);
+}
+
+/* --- Embed Edit Button --- */
+.rm-embed-edit {
+  background-color: var(--cl-gray-100, #f3f4f6);
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+
+.bp4-dark .rm-embed-edit,
+.bp5-dark .rm-embed-edit,
+[data-color-mode="dark"] .rm-embed-edit {
+  background-color: var(--cl-gray-700, #374151);
+}
+
+/* --- Block Embed Variant --- */
+.rm-embed-container--block {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+/* --- Embed within Query Builder Results --- */
+.roamjs-query-page .rm-embed-container {
+  background-color: var(--cl-gray-800, #1f2937) !important;
+}
+
+.roamjs-query-page .rm-embed-container .rm-embed-container {
+  background-color: var(--cl-gray-750, #26272b) !important;
+}
 `;
 
   const style = document.createElement('style');
@@ -416,5 +546,5 @@
   style.textContent = css;
   document.head.appendChild(style);
 
-  console.log('[QB Dark Mode] Styles loaded successfully');
+  console.log('[Roam Styling] Extension loaded successfully');
 })();

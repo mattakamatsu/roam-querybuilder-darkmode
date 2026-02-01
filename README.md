@@ -1,12 +1,35 @@
-# Roam Query Builder Dark Mode
+# Roam Styling Extension
 
-Make the Roam Query Builder extension compatible with [Roam Studio](https://github.com/rcvd/RoamStudio) dark mode themes.
+Styling improvements for Roam Research, compatible with [Roam Studio](https://github.com/rcvd/RoamStudio) themes.
+
+## Features
+
+### 1. Query Builder Dark Mode
+Make the Roam Query Builder extension compatible with dark mode themes.
 
 ![Query Builder in Dark Mode](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fdiscourse-graphs%2FTUOr3ZDklv.png?alt=media&token=9fc9bc04-6115-466c-b158-cd078f481b50)
 
+### 2. Embed Styling (Light & Dark Mode)
+Improved styling for `{{[[embed]]}}` blocks in both light and dark modes.
+
+**Light Mode:**
+- Subtle gray background for visual separation
+- Blue left border accent for hierarchy
+- Clean, polished appearance
+
+**Dark Mode:**
+- Dark background that matches your theme
+- Proper text contrast
+- Visible but subtle borders
+
+**Nested Embeds:**
+- Progressive background colors for visual depth
+- Works up to 3+ levels of nesting
+
 ## The Problem
 
-The [Query Builder](https://github.com/RoamJS/query-builder) extension uses hardcoded light-colored backgrounds and text, which become unreadable when using Roam Studio's dark themes.
+- **Query Builder**: Uses hardcoded light-colored backgrounds, unreadable in dark mode
+- **Embeds**: Background color doesn't adapt to dark themes, making text unreadable
 
 ## The Solution
 
@@ -14,14 +37,22 @@ This extension injects CSS that uses Roam Studio's CSS variable system (`--bc-*`
 
 ## What Gets Styled
 
+### Query Builder
 - Main query builder card containers
 - Results tables (headers, footers, rows)
 - Query editor panels
 - Form elements (inputs, buttons, switches)
 - Kanban cards
 - Popovers and menus
-- Error messages
-- Loading states
+- Error messages and loading states
+
+### Embeds
+- `.rm-embed-container` - Main embed wrapper
+- `.rm-embed--page` - Page embeds
+- `.rm-embed-container--block` - Block embeds
+- Nested embed containers (levels 2-3+)
+- Embed controls and edit buttons
+- Embed path/breadcrumb navigation
 
 ## Installation
 
@@ -53,19 +84,20 @@ The extension creates a `<style>` element with CSS rules that:
 
 2. **Prevent Duplicate Injection**: Checks if styles are already loaded before injecting
 
-3. **Target Specific Selectors**: Only styles Query Builder components without affecting other parts of Roam
+3. **Support Both Modes**: Uses dark mode selectors (`.bp4-dark`, `[data-color-mode="dark"]`) to apply appropriate styles
 
 ## Compatibility
 
 - Works with Roam Studio light and dark themes
 - Compatible with Blueprint JS v4 and v5 components
 - Falls back to sensible defaults if Roam Studio variables aren't defined
+- Works standalone (without Roam Studio) using fallback colors
 
 ## Requirements
 
 - [Roam Research](https://roamresearch.com/)
-- [Query Builder extension](https://github.com/RoamJS/query-builder)
-- [Roam Studio](https://github.com/rcvd/RoamStudio) (for dark mode themes)
+- [Roam Studio](https://github.com/rcvd/RoamStudio) (recommended for best results)
+- [Query Builder extension](https://github.com/RoamJS/query-builder) (for Query Builder features)
 
 ## License
 
