@@ -29,13 +29,17 @@
    ============================================ */
 
 /* --- Main Card Container --- */
+.bp3-dark .roamjs-query-page,
 .bp4-dark .roamjs-query-page,
 .bp5-dark .roamjs-query-page,
 [data-color-mode="dark"] .roamjs-query-page,
+.bp3-dark .roamjs-query-page.bp3-card,
 .bp4-dark .roamjs-query-page.bp4-card,
 .bp5-dark .roamjs-query-page.bp5-card,
+[data-color-mode="dark"] .roamjs-query-page.bp3-card,
 [data-color-mode="dark"] .roamjs-query-page.bp4-card,
 [data-color-mode="dark"] .roamjs-query-page.bp5-card,
+.bp3-dark [id^="roamjs-query-page-"],
 .bp4-dark [id^="roamjs-query-page-"],
 .bp5-dark [id^="roamjs-query-page-"],
 [data-color-mode="dark"] [id^="roamjs-query-page-"] {
@@ -46,6 +50,7 @@
 }
 
 /* --- Results View Container --- */
+.bp3-dark .roamjs-query-results-view,
 .bp4-dark .roamjs-query-results-view,
 .bp5-dark .roamjs-query-results-view,
 [data-color-mode="dark"] .roamjs-query-results-view {
@@ -53,24 +58,29 @@
 }
 
 /* --- Table Styling --- */
+.bp3-dark .roamjs-query-page table,
 .bp4-dark .roamjs-query-page table,
 .bp5-dark .roamjs-query-page table,
 [data-color-mode="dark"] .roamjs-query-page table {
   color: var(--co-main, var(--cl-gray-125, #e0e0e0));
 }
 
+.bp3-dark .roamjs-query-page thead,
 .bp4-dark .roamjs-query-page thead,
 .bp5-dark .roamjs-query-page thead,
 [data-color-mode="dark"] .roamjs-query-page thead,
+.bp3-dark .roamjs-query-page thead tr,
 .bp4-dark .roamjs-query-page thead tr,
 .bp5-dark .roamjs-query-page thead tr,
 [data-color-mode="dark"] .roamjs-query-page thead tr {
   background: var(--cl-gray-800, #1f2937) !important;
 }
 
+.bp3-dark .roamjs-query-page thead td,
 .bp4-dark .roamjs-query-page thead td,
 .bp5-dark .roamjs-query-page thead td,
 [data-color-mode="dark"] .roamjs-query-page thead td,
+.bp3-dark .roamjs-query-page thead th,
 .bp4-dark .roamjs-query-page thead th,
 .bp5-dark .roamjs-query-page thead th,
 [data-color-mode="dark"] .roamjs-query-page thead th {
@@ -79,12 +89,15 @@
   border-color: var(--cl-gray-700, #374151) !important;
 }
 
+.bp3-dark .roamjs-query-page tfoot,
 .bp4-dark .roamjs-query-page tfoot,
 .bp5-dark .roamjs-query-page tfoot,
 [data-color-mode="dark"] .roamjs-query-page tfoot,
+.bp3-dark .roamjs-query-page tfoot tr,
 .bp4-dark .roamjs-query-page tfoot tr,
 .bp5-dark .roamjs-query-page tfoot tr,
 [data-color-mode="dark"] .roamjs-query-page tfoot tr,
+.bp3-dark .roamjs-query-page tfoot td,
 .bp4-dark .roamjs-query-page tfoot td,
 .bp5-dark .roamjs-query-page tfoot td,
 [data-color-mode="dark"] .roamjs-query-page tfoot td {
@@ -92,12 +105,14 @@
   color: var(--co-main, var(--cl-gray-125, #e0e0e0)) !important;
 }
 
+.bp3-dark .roamjs-query-page tbody tr:hover,
 .bp4-dark .roamjs-query-page tbody tr:hover,
 .bp5-dark .roamjs-query-page tbody tr:hover,
 [data-color-mode="dark"] .roamjs-query-page tbody tr:hover {
   background: var(--cl-gray-750, #26272b) !important;
 }
 
+.bp3-dark .roamjs-query-page tbody td,
 .bp4-dark .roamjs-query-page tbody td,
 .bp5-dark .roamjs-query-page tbody td,
 [data-color-mode="dark"] .roamjs-query-page tbody td {
@@ -105,17 +120,21 @@
 }
 
 /* Striped table rows */
+.bp3-dark .roamjs-query-page .bp3-html-table-striped tbody tr:nth-child(odd),
 .bp4-dark .roamjs-query-page .bp4-html-table-striped tbody tr:nth-child(odd),
 .bp5-dark .roamjs-query-page .bp5-html-table-striped tbody tr:nth-child(odd),
+[data-color-mode="dark"] .roamjs-query-page .bp3-html-table-striped tbody tr:nth-child(odd),
 [data-color-mode="dark"] .roamjs-query-page .bp4-html-table-striped tbody tr:nth-child(odd),
 [data-color-mode="dark"] .roamjs-query-page .bp5-html-table-striped tbody tr:nth-child(odd) {
   background: var(--cl-gray-850, #1c1c1c) !important;
 }
 
 /* --- Loading State --- */
+.bp3-dark .roamjs-query-page .px-8.py-4,
 .bp4-dark .roamjs-query-page .px-8.py-4,
 .bp5-dark .roamjs-query-page .px-8.py-4,
 [data-color-mode="dark"] .roamjs-query-page .px-8.py-4,
+.bp3-dark .roamjs-query-page p,
 .bp4-dark .roamjs-query-page p,
 .bp5-dark .roamjs-query-page p,
 [data-color-mode="dark"] .roamjs-query-page p {
@@ -123,17 +142,21 @@
 }
 
 /* Blueprint Spinner */
+.bp3-dark .roamjs-query-page .bp3-spinner .bp3-spinner-head,
 .bp4-dark .roamjs-query-page .bp4-spinner .bp4-spinner-head,
 .bp5-dark .roamjs-query-page .bp5-spinner .bp5-spinner-head,
+[data-color-mode="dark"] .roamjs-query-page .bp3-spinner .bp3-spinner-head,
 [data-color-mode="dark"] .roamjs-query-page .bp4-spinner .bp4-spinner-head,
 [data-color-mode="dark"] .roamjs-query-page .bp5-spinner .bp5-spinner-head {
   stroke: var(--co-main, var(--cl-gray-300, #b0b0b0));
 }
 
 /* --- Error Messages --- */
+.bp3-dark .roamjs-query-page .text-red-700,
 .bp4-dark .roamjs-query-page .text-red-700,
 .bp5-dark .roamjs-query-page .text-red-700,
 [data-color-mode="dark"] .roamjs-query-page .text-red-700,
+.bp3-dark .roamjs-query-page .mb-4.text-red-700,
 .bp4-dark .roamjs-query-page .mb-4.text-red-700,
 .bp5-dark .roamjs-query-page .mb-4.text-red-700,
 [data-color-mode="dark"] .roamjs-query-page .mb-4.text-red-700 {
@@ -141,6 +164,7 @@
 }
 
 /* --- Query Editor Panel --- */
+.bp3-dark .roamjs-query-page .p-4,
 .bp4-dark .roamjs-query-page .p-4,
 .bp5-dark .roamjs-query-page .p-4,
 [data-color-mode="dark"] .roamjs-query-page .p-4 {
@@ -148,9 +172,11 @@
 }
 
 /* --- Search Filter Panel --- */
+.bp3-dark .roamjs-query-page .p-4.w-full,
 .bp4-dark .roamjs-query-page .p-4.w-full,
 .bp5-dark .roamjs-query-page .p-4.w-full,
 [data-color-mode="dark"] .roamjs-query-page .p-4.w-full,
+.bp3-dark .roamjs-query-results-view > .p-4,
 .bp4-dark .roamjs-query-results-view > .p-4,
 .bp5-dark .roamjs-query-results-view > .p-4,
 [data-color-mode="dark"] .roamjs-query-results-view > .p-4 {
@@ -158,6 +184,7 @@
 }
 
 /* --- Interface Footer (Showing X of Y results) --- */
+.bp3-dark .roamjs-query-results-view > .relative > div:last-child,
 .bp4-dark .roamjs-query-results-view > .relative > div:last-child,
 .bp5-dark .roamjs-query-results-view > .relative > div:last-child,
 [data-color-mode="dark"] .roamjs-query-results-view > .relative > div:last-child {
@@ -165,6 +192,7 @@
 }
 
 /* --- Query Used Panel --- */
+.bp3-dark .roamjs-query-used,
 .bp4-dark .roamjs-query-used,
 .bp5-dark .roamjs-query-used,
 [data-color-mode="dark"] .roamjs-query-used {
@@ -173,50 +201,64 @@
 }
 
 /* --- Blueprint Buttons --- */
+.bp3-dark .roamjs-query-page .bp3-button,
 .bp4-dark .roamjs-query-page .bp4-button,
 .bp5-dark .roamjs-query-page .bp5-button,
+[data-color-mode="dark"] .roamjs-query-page .bp3-button,
 [data-color-mode="dark"] .roamjs-query-page .bp4-button,
 [data-color-mode="dark"] .roamjs-query-page .bp5-button {
   color: var(--co-main, var(--cl-gray-125, #e0e0e0));
 }
 
+.bp3-dark .roamjs-query-page .bp3-button:not(.bp3-intent-primary):not(.bp3-minimal),
 .bp4-dark .roamjs-query-page .bp4-button:not(.bp4-intent-primary):not(.bp4-minimal),
 .bp5-dark .roamjs-query-page .bp5-button:not(.bp5-intent-primary):not(.bp5-minimal),
+[data-color-mode="dark"] .roamjs-query-page .bp3-button:not(.bp3-intent-primary):not(.bp3-minimal),
 [data-color-mode="dark"] .roamjs-query-page .bp4-button:not(.bp4-intent-primary):not(.bp4-minimal),
 [data-color-mode="dark"] .roamjs-query-page .bp5-button:not(.bp5-intent-primary):not(.bp5-minimal) {
   background: var(--cl-gray-700, #374151);
   border-color: var(--cl-gray-600, #4b5563);
 }
 
+.bp3-dark .roamjs-query-page .bp3-button:not(.bp3-intent-primary):hover,
 .bp4-dark .roamjs-query-page .bp4-button:not(.bp4-intent-primary):hover,
 .bp5-dark .roamjs-query-page .bp5-button:not(.bp5-intent-primary):hover,
+[data-color-mode="dark"] .roamjs-query-page .bp3-button:not(.bp3-intent-primary):hover,
 [data-color-mode="dark"] .roamjs-query-page .bp4-button:not(.bp4-intent-primary):hover,
 [data-color-mode="dark"] .roamjs-query-page .bp5-button:not(.bp5-intent-primary):hover {
   background: var(--cl-gray-600, #4b5563);
 }
 
 /* Minimal buttons */
+.bp3-dark .roamjs-query-page .bp3-button.bp3-minimal,
 .bp4-dark .roamjs-query-page .bp4-button.bp4-minimal,
 .bp5-dark .roamjs-query-page .bp5-button.bp5-minimal,
+[data-color-mode="dark"] .roamjs-query-page .bp3-button.bp3-minimal,
 [data-color-mode="dark"] .roamjs-query-page .bp4-button.bp4-minimal,
 [data-color-mode="dark"] .roamjs-query-page .bp5-button.bp5-minimal {
   color: var(--co-main, var(--cl-gray-300, #d1d5db));
 }
 
+.bp3-dark .roamjs-query-page .bp3-button.bp3-minimal:hover,
 .bp4-dark .roamjs-query-page .bp4-button.bp4-minimal:hover,
 .bp5-dark .roamjs-query-page .bp5-button.bp5-minimal:hover,
+[data-color-mode="dark"] .roamjs-query-page .bp3-button.bp3-minimal:hover,
 [data-color-mode="dark"] .roamjs-query-page .bp4-button.bp4-minimal:hover,
 [data-color-mode="dark"] .roamjs-query-page .bp5-button.bp5-minimal:hover {
   background: var(--cl-gray-700, #374151);
 }
 
 /* --- Blueprint Input Fields --- */
+.bp3-dark .roamjs-query-page .bp3-input,
 .bp4-dark .roamjs-query-page .bp4-input,
 .bp5-dark .roamjs-query-page .bp5-input,
+[data-color-mode="dark"] .roamjs-query-page .bp3-input,
 [data-color-mode="dark"] .roamjs-query-page .bp4-input,
 [data-color-mode="dark"] .roamjs-query-page .bp5-input,
+.bp3-dark .roamjs-query-page .bp3-input-group input,
 .bp4-dark .roamjs-query-page .bp4-input-group input,
 .bp5-dark .roamjs-query-page .bp5-input-group input,
+[data-color-mode="dark"] .roamjs-query-page .bp3-input-group input,
 [data-color-mode="dark"] .roamjs-query-page .bp4-input-group input,
 [data-color-mode="dark"] .roamjs-query-page .bp5-input-group input {
   background: var(--cl-gray-900, #111827) !important;
@@ -224,15 +266,19 @@
   border-color: var(--cl-gray-600, #4b5563) !important;
 }
 
+.bp3-dark .roamjs-query-page .bp3-input::placeholder,
 .bp4-dark .roamjs-query-page .bp4-input::placeholder,
 .bp5-dark .roamjs-query-page .bp5-input::placeholder,
+[data-color-mode="dark"] .roamjs-query-page .bp3-input::placeholder,
 [data-color-mode="dark"] .roamjs-query-page .bp4-input::placeholder,
 [data-color-mode="dark"] .roamjs-query-page .bp5-input::placeholder {
   color: var(--cl-gray-500, #6b7280);
 }
 
+.bp3-dark .roamjs-query-page .bp3-input:focus,
 .bp4-dark .roamjs-query-page .bp4-input:focus,
 .bp5-dark .roamjs-query-page .bp5-input:focus,
+[data-color-mode="dark"] .roamjs-query-page .bp3-input:focus,
 [data-color-mode="dark"] .roamjs-query-page .bp4-input:focus,
 [data-color-mode="dark"] .roamjs-query-page .bp5-input:focus {
   border-color: var(--cl-blue-500, #3b82f6) !important;
@@ -240,10 +286,13 @@
 }
 
 /* --- Blueprint TextArea --- */
+.bp3-dark .roamjs-query-page .bp3-text-area,
 .bp4-dark .roamjs-query-page .bp4-text-area,
 .bp5-dark .roamjs-query-page .bp5-text-area,
+[data-color-mode="dark"] .roamjs-query-page .bp3-text-area,
 [data-color-mode="dark"] .roamjs-query-page .bp4-text-area,
 [data-color-mode="dark"] .roamjs-query-page .bp5-text-area,
+.bp3-dark .roamjs-query-page textarea,
 .bp4-dark .roamjs-query-page textarea,
 .bp5-dark .roamjs-query-page textarea,
 [data-color-mode="dark"] .roamjs-query-page textarea {
@@ -347,6 +396,7 @@
 }
 
 /* --- Column Views Panel --- */
+.bp3-dark .roamjs-query-column-views,
 .bp4-dark .roamjs-query-column-views,
 .bp5-dark .roamjs-query-column-views,
 [data-color-mode="dark"] .roamjs-query-column-views {
@@ -354,33 +404,40 @@
   color: var(--co-main, var(--cl-gray-125, #e0e0e0)) !important;
 }
 
+.bp3-dark .roamjs-query-column-views .bg-gray-50,
 .bp4-dark .roamjs-query-column-views .bg-gray-50,
 .bp5-dark .roamjs-query-column-views .bg-gray-50,
 [data-color-mode="dark"] .roamjs-query-column-views .bg-gray-50,
+.bp3-dark .roamjs-query-column-views thead,
 .bp4-dark .roamjs-query-column-views thead,
 .bp5-dark .roamjs-query-column-views thead,
 [data-color-mode="dark"] .roamjs-query-column-views thead {
   background: var(--cl-gray-800, #1f2937) !important;
 }
 
+.bp3-dark .roamjs-query-column-views .bg-white,
 .bp4-dark .roamjs-query-column-views .bg-white,
 .bp5-dark .roamjs-query-column-views .bg-white,
 [data-color-mode="dark"] .roamjs-query-column-views .bg-white,
+.bp3-dark .roamjs-query-column-views tbody,
 .bp4-dark .roamjs-query-column-views tbody,
 .bp5-dark .roamjs-query-column-views tbody,
 [data-color-mode="dark"] .roamjs-query-column-views tbody {
   background: var(--cl-gray-850, #1c1c1c) !important;
 }
 
+.bp3-dark .roamjs-query-column-views .text-gray-500,
 .bp4-dark .roamjs-query-column-views .text-gray-500,
 .bp5-dark .roamjs-query-column-views .text-gray-500,
 [data-color-mode="dark"] .roamjs-query-column-views .text-gray-500,
+.bp3-dark .roamjs-query-column-views th,
 .bp4-dark .roamjs-query-column-views th,
 .bp5-dark .roamjs-query-column-views th,
 [data-color-mode="dark"] .roamjs-query-column-views th {
   color: var(--cl-gray-400, #9ca3af) !important;
 }
 
+.bp3-dark .roamjs-query-column-views .divide-gray-200 > *,
 .bp4-dark .roamjs-query-column-views .divide-gray-200 > *,
 .bp5-dark .roamjs-query-column-views .divide-gray-200 > *,
 [data-color-mode="dark"] .roamjs-query-column-views .divide-gray-200 > * {
@@ -388,24 +445,28 @@
 }
 
 /* --- Layout Selection Grid --- */
+.bp3-dark .roamjs-query-page .grid .border,
 .bp4-dark .roamjs-query-page .grid .border,
 .bp5-dark .roamjs-query-page .grid .border,
 [data-color-mode="dark"] .roamjs-query-page .grid .border {
   border-color: var(--cl-gray-600, #4b5563) !important;
 }
 
+.bp3-dark .roamjs-query-page .grid .border-blue-800,
 .bp4-dark .roamjs-query-page .grid .border-blue-800,
 .bp5-dark .roamjs-query-page .grid .border-blue-800,
 [data-color-mode="dark"] .roamjs-query-page .grid .border-blue-800 {
   border-color: var(--cl-blue-500, #3b82f6) !important;
 }
 
+.bp3-dark .roamjs-query-page .grid .text-gray-800,
 .bp4-dark .roamjs-query-page .grid .text-gray-800,
 .bp5-dark .roamjs-query-page .grid .text-gray-800,
 [data-color-mode="dark"] .roamjs-query-page .grid .text-gray-800 {
   color: var(--cl-gray-300, #d1d5db) !important;
 }
 
+.bp3-dark .roamjs-query-page .grid .text-blue-800,
 .bp4-dark .roamjs-query-page .grid .text-blue-800,
 .bp5-dark .roamjs-query-page .grid .text-blue-800,
 [data-color-mode="dark"] .roamjs-query-page .grid .text-blue-800 {
@@ -413,6 +474,7 @@
 }
 
 /* --- Kanban Cards --- */
+.bp3-dark .roamjs-kanban-card > div,
 .bp4-dark .roamjs-kanban-card > div,
 .bp5-dark .roamjs-kanban-card > div,
 [data-color-mode="dark"] .roamjs-kanban-card > div {
@@ -420,24 +482,28 @@
   color: var(--co-main, var(--cl-gray-125, #e0e0e0)) !important;
 }
 
+.bp3-dark .roamjs-kanban-card > div:hover,
 .bp4-dark .roamjs-kanban-card > div:hover,
 .bp5-dark .roamjs-kanban-card > div:hover,
 [data-color-mode="dark"] .roamjs-kanban-card > div:hover {
   background-color: var(--cl-gray-700, #374151) !important;
 }
 
+.bp3-dark .roamjs-kanban-card .bg-white,
 .bp4-dark .roamjs-kanban-card .bg-white,
 .bp5-dark .roamjs-kanban-card .bg-white,
 [data-color-mode="dark"] .roamjs-kanban-card .bg-white {
   background-color: var(--cl-gray-800, #1f2937) !important;
 }
 
+.bp3-dark .roamjs-kanban-card .hover\\:bg-gray-200:hover,
 .bp4-dark .roamjs-kanban-card .hover\\:bg-gray-200:hover,
 .bp5-dark .roamjs-kanban-card .hover\\:bg-gray-200:hover,
 [data-color-mode="dark"] .roamjs-kanban-card .hover\\:bg-gray-200:hover {
   background-color: var(--cl-gray-700, #374151) !important;
 }
 
+.bp3-dark .roamjs-kanban-card .text-gray-400,
 .bp4-dark .roamjs-kanban-card .text-gray-400,
 .bp5-dark .roamjs-kanban-card .text-gray-400,
 [data-color-mode="dark"] .roamjs-kanban-card .text-gray-400 {
@@ -445,6 +511,7 @@
 }
 
 /* --- Kanban Column Headers --- */
+.bp3-dark .roamjs-query-page .roamjs-kanban-column-header,
 .bp4-dark .roamjs-query-page .roamjs-kanban-column-header,
 .bp5-dark .roamjs-query-page .roamjs-kanban-column-header,
 [data-color-mode="dark"] .roamjs-query-page .roamjs-kanban-column-header {
@@ -452,6 +519,7 @@
 }
 
 /* --- Filter Panels --- */
+.bp3-dark .roamjs-query-page .relative.p-4,
 .bp4-dark .roamjs-query-page .relative.p-4,
 .bp5-dark .roamjs-query-page .relative.p-4,
 [data-color-mode="dark"] .roamjs-query-page .relative.p-4 {
@@ -483,6 +551,7 @@
 }
 
 /* --- Filter Component --- */
+.bp3-dark .roamjs-query-page .roamjs-filter-button,
 .bp4-dark .roamjs-query-page .roamjs-filter-button,
 .bp5-dark .roamjs-query-page .roamjs-filter-button,
 [data-color-mode="dark"] .roamjs-query-page .roamjs-filter-button {
@@ -490,6 +559,7 @@
 }
 
 /* --- Dirty Indicator --- */
+.bp3-dark .roamjs-query-page .roamjs-item-dirty::after,
 .bp4-dark .roamjs-query-page .roamjs-item-dirty::after,
 .bp5-dark .roamjs-query-page .roamjs-item-dirty::after,
 [data-color-mode="dark"] .roamjs-query-page .roamjs-item-dirty::after {
@@ -497,29 +567,36 @@
 }
 
 /* --- Headings --- */
+.bp3-dark .roamjs-query-page h4,
 .bp4-dark .roamjs-query-page h4,
 .bp5-dark .roamjs-query-page h4,
 [data-color-mode="dark"] .roamjs-query-page h4,
+.bp3-dark .roamjs-query-page h6,
 .bp4-dark .roamjs-query-page h6,
 .bp5-dark .roamjs-query-page h6,
 [data-color-mode="dark"] .roamjs-query-page h6,
+.bp3-dark .roamjs-query-page .bp3-heading,
 .bp4-dark .roamjs-query-page .bp4-heading,
 .bp5-dark .roamjs-query-page .bp5-heading,
+[data-color-mode="dark"] .roamjs-query-page .bp3-heading,
 [data-color-mode="dark"] .roamjs-query-page .bp4-heading,
 [data-color-mode="dark"] .roamjs-query-page .bp5-heading {
   color: var(--co-main, var(--cl-gray-125, #e0e0e0)) !important;
 }
 
 /* --- Links --- */
+.bp3-dark .roamjs-query-page a,
 .bp4-dark .roamjs-query-page a,
 .bp5-dark .roamjs-query-page a,
 [data-color-mode="dark"] .roamjs-query-page a,
+.bp3-dark .roamjs-query-page .rm-page-ref,
 .bp4-dark .roamjs-query-page .rm-page-ref,
 .bp5-dark .roamjs-query-page .rm-page-ref,
 [data-color-mode="dark"] .roamjs-query-page .rm-page-ref {
   color: var(--cl-blue-400, #60a5fa);
 }
 
+.bp3-dark .roamjs-query-page a:hover,
 .bp4-dark .roamjs-query-page a:hover,
 .bp5-dark .roamjs-query-page a:hover,
 [data-color-mode="dark"] .roamjs-query-page a:hover {
@@ -527,6 +604,7 @@
 }
 
 /* --- Embeds in Query Builder --- */
+.bp3-dark .roamjs-query-embed,
 .bp4-dark .roamjs-query-embed,
 .bp5-dark .roamjs-query-embed,
 [data-color-mode="dark"] .roamjs-query-embed {
@@ -536,6 +614,7 @@
 }
 
 /* --- Highlighted Results --- */
+.bp3-dark .roamjs-query-hightlighted-result,
 .bp4-dark .roamjs-query-hightlighted-result,
 .bp5-dark .roamjs-query-hightlighted-result,
 [data-color-mode="dark"] .roamjs-query-hightlighted-result {
@@ -546,6 +625,7 @@
 }
 
 /* --- Extra Row (Context/Discourse) --- */
+.bp3-dark .roamjs-extra-row td,
 .bp4-dark .roamjs-extra-row td,
 .bp5-dark .roamjs-extra-row td,
 [data-color-mode="dark"] .roamjs-extra-row td {
@@ -553,21 +633,26 @@
 }
 
 /* --- Tooltip --- */
+.bp3-dark .roamjs-query-page .bp3-tooltip,
 .bp4-dark .roamjs-query-page .bp4-tooltip,
 .bp5-dark .roamjs-query-page .bp5-tooltip,
+[data-color-mode="dark"] .roamjs-query-page .bp3-tooltip,
 [data-color-mode="dark"] .roamjs-query-page .bp4-tooltip,
 [data-color-mode="dark"] .roamjs-query-page .bp5-tooltip {
   background: var(--cl-gray-900, #111827);
 }
 
+.bp3-dark .roamjs-query-page .bp3-tooltip .bp3-popover-content,
 .bp4-dark .roamjs-query-page .bp4-tooltip .bp4-popover-content,
 .bp5-dark .roamjs-query-page .bp5-tooltip .bp5-popover-content,
+[data-color-mode="dark"] .roamjs-query-page .bp3-tooltip .bp3-popover-content,
 [data-color-mode="dark"] .roamjs-query-page .bp4-tooltip .bp4-popover-content,
 [data-color-mode="dark"] .roamjs-query-page .bp5-tooltip .bp5-popover-content {
   color: var(--co-main, var(--cl-gray-125, #e0e0e0));
 }
 
 /* --- Column Resize Handle --- */
+.bp3-dark .roamjs-query-page td > div[style*="cursor: ew-resize"],
 .bp4-dark .roamjs-query-page td > div[style*="cursor: ew-resize"],
 .bp5-dark .roamjs-query-page td > div[style*="cursor: ew-resize"],
 [data-color-mode="dark"] .roamjs-query-page td > div[style*="cursor: ew-resize"] {
@@ -586,14 +671,17 @@
 }
 
 /* --- Blueprint Label --- */
+.bp3-dark .roamjs-query-page .bp3-label,
 .bp4-dark .roamjs-query-page .bp4-label,
 .bp5-dark .roamjs-query-page .bp5-label,
+[data-color-mode="dark"] .roamjs-query-page .bp3-label,
 [data-color-mode="dark"] .roamjs-query-page .bp4-label,
 [data-color-mode="dark"] .roamjs-query-page .bp5-label {
   color: var(--co-main, var(--cl-gray-125, #e0e0e0));
 }
 
 /* --- Italic/Empty State --- */
+.bp3-dark .roamjs-query-page i,
 .bp4-dark .roamjs-query-page i,
 .bp5-dark .roamjs-query-page i,
 [data-color-mode="dark"] .roamjs-query-page i {
@@ -601,6 +689,7 @@
 }
 
 /* --- No Results Message --- */
+.bp3-dark .roamjs-query-page .flex.justify-between.items-center.mb-0 i,
 .bp4-dark .roamjs-query-page .flex.justify-between.items-center.mb-0 i,
 .bp5-dark .roamjs-query-page .flex.justify-between.items-center.mb-0 i,
 [data-color-mode="dark"] .roamjs-query-page .flex.justify-between.items-center.mb-0 i {
@@ -621,6 +710,7 @@
 }
 
 /* Dark mode override for embeds */
+.bp3-dark .rm-embed-container,
 .bp4-dark .rm-embed-container,
 .bp5-dark .rm-embed-container,
 [data-color-mode="dark"] .rm-embed-container {
@@ -636,6 +726,7 @@
   border-radius: 4px;
 }
 
+.bp3-dark .rm-embed--page,
 .bp4-dark .rm-embed--page,
 .bp5-dark .rm-embed--page,
 [data-color-mode="dark"] .rm-embed--page {
@@ -657,6 +748,7 @@
 }
 
 /* Dark mode nested embeds */
+.bp3-dark .rm-embed-container .rm-embed-container,
 .bp4-dark .rm-embed-container .rm-embed-container,
 .bp5-dark .rm-embed-container .rm-embed-container,
 [data-color-mode="dark"] .rm-embed-container .rm-embed-container {
@@ -670,6 +762,7 @@
   border-left-color: var(--cl-gray-500, #6b7280);
 }
 
+.bp3-dark .rm-embed-container .rm-embed-container .rm-embed-container,
 .bp4-dark .rm-embed-container .rm-embed-container .rm-embed-container,
 .bp5-dark .rm-embed-container .rm-embed-container .rm-embed-container,
 [data-color-mode="dark"] .rm-embed-container .rm-embed-container .rm-embed-container {
@@ -686,6 +779,7 @@
   color: var(--cl-gray-700, #374151);
 }
 
+.bp3-dark .rm-embed-margin-action:hover,
 .bp4-dark .rm-embed-margin-action:hover,
 .bp5-dark .rm-embed-margin-action:hover,
 [data-color-mode="dark"] .rm-embed-margin-action:hover {
@@ -699,6 +793,7 @@
   padding: 2px 6px;
 }
 
+.bp3-dark .rm-embed-path__inner,
 .bp4-dark .rm-embed-path__inner,
 .bp5-dark .rm-embed-path__inner,
 [data-color-mode="dark"] .rm-embed-path__inner {
@@ -712,6 +807,7 @@
   padding: 2px 4px;
 }
 
+.bp3-dark .rm-embed-edit,
 .bp4-dark .rm-embed-edit,
 .bp5-dark .rm-embed-edit,
 [data-color-mode="dark"] .rm-embed-edit {
@@ -725,12 +821,14 @@
 }
 
 /* --- Embed within Query Builder Results (Dark Mode Only) --- */
+.bp3-dark .roamjs-query-page .rm-embed-container,
 .bp4-dark .roamjs-query-page .rm-embed-container,
 .bp5-dark .roamjs-query-page .rm-embed-container,
 [data-color-mode="dark"] .roamjs-query-page .rm-embed-container {
   background-color: var(--cl-gray-800, #1f2937) !important;
 }
 
+.bp3-dark .roamjs-query-page .rm-embed-container .rm-embed-container,
 .bp4-dark .roamjs-query-page .rm-embed-container .rm-embed-container,
 .bp5-dark .roamjs-query-page .rm-embed-container .rm-embed-container,
 [data-color-mode="dark"] .roamjs-query-page .rm-embed-container .rm-embed-container {
