@@ -61,8 +61,28 @@
 .bp3-dark .roamjs-query-page table,
 .bp4-dark .roamjs-query-page table,
 .bp5-dark .roamjs-query-page table,
-[data-color-mode="dark"] .roamjs-query-page table {
+[data-color-mode="dark"] .roamjs-query-page table,
+.bp3-dark .roamjs-query-page .bp3-html-table,
+.bp4-dark .roamjs-query-page .bp4-html-table,
+.bp5-dark .roamjs-query-page .bp5-html-table,
+[data-color-mode="dark"] .roamjs-query-page .bp3-html-table {
+  background-color: var(--bc-dialog, var(--cl-gray-825, #2d2d2d)) !important;
   color: var(--co-main, var(--cl-gray-125, #e0e0e0));
+}
+
+/* Table body rows - explicit background */
+.bp3-dark .roamjs-query-page tbody,
+.bp4-dark .roamjs-query-page tbody,
+.bp5-dark .roamjs-query-page tbody,
+[data-color-mode="dark"] .roamjs-query-page tbody {
+  background-color: var(--bc-dialog, var(--cl-gray-825, #2d2d2d)) !important;
+}
+
+.bp3-dark .roamjs-query-page tbody tr,
+.bp4-dark .roamjs-query-page tbody tr,
+.bp5-dark .roamjs-query-page tbody tr,
+[data-color-mode="dark"] .roamjs-query-page tbody tr {
+  background-color: var(--bc-dialog, var(--cl-gray-825, #2d2d2d)) !important;
 }
 
 .bp3-dark .roamjs-query-page thead,
@@ -116,6 +136,8 @@
 .bp4-dark .roamjs-query-page tbody td,
 .bp5-dark .roamjs-query-page tbody td,
 [data-color-mode="dark"] .roamjs-query-page tbody td {
+  background-color: var(--bc-dialog, var(--cl-gray-825, #2d2d2d)) !important;
+  color: var(--co-main, var(--cl-gray-125, #e0e0e0)) !important;
   border-color: var(--cl-gray-700, #374151) !important;
 }
 
