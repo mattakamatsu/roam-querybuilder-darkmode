@@ -141,6 +141,113 @@
   border-color: var(--cl-gray-700, #374151) !important;
 }
 
+/* ============================================
+   Discourse Graph / Custom Template Overrides
+   (Override hardcoded inline styles in templates)
+   ============================================ */
+
+/* Override hardcoded #fafafa background on evidence cards and similar */
+.bp3-dark .roamjs-query-page div[style*="background: #fafafa"],
+.bp3-dark .roamjs-query-page div[style*="background:#fafafa"],
+.bp3-dark .roamjs-query-page div[style*="background-color: #fafafa"],
+[data-color-mode="dark"] .roamjs-query-page div[style*="background: #fafafa"],
+[data-color-mode="dark"] .roamjs-query-page div[style*="background:#fafafa"],
+[data-color-mode="dark"] .roamjs-query-page div[style*="background-color: #fafafa"] {
+  background: var(--cl-gray-800, #1f2937) !important;
+  background-color: var(--cl-gray-800, #1f2937) !important;
+}
+
+/* Override hardcoded #333 text color */
+.bp3-dark .roamjs-query-page div[style*="color: #333"],
+.bp3-dark .roamjs-query-page div[style*="color:#333"],
+.bp3-dark .roamjs-query-page span[style*="color: #333"],
+.bp3-dark .roamjs-query-page span[style*="color:#333"],
+[data-color-mode="dark"] .roamjs-query-page div[style*="color: #333"],
+[data-color-mode="dark"] .roamjs-query-page div[style*="color:#333"],
+[data-color-mode="dark"] .roamjs-query-page span[style*="color: #333"],
+[data-color-mode="dark"] .roamjs-query-page span[style*="color:#333"] {
+  color: var(--co-main, var(--cl-gray-125, #e0e0e0)) !important;
+}
+
+/* Override hardcoded #888 muted text color */
+.bp3-dark .roamjs-query-page div[style*="color: #888"],
+.bp3-dark .roamjs-query-page div[style*="color:#888"],
+.bp3-dark .roamjs-query-page span[style*="color: #888"],
+.bp3-dark .roamjs-query-page span[style*="color:#888"],
+[data-color-mode="dark"] .roamjs-query-page div[style*="color: #888"],
+[data-color-mode="dark"] .roamjs-query-page div[style*="color:#888"],
+[data-color-mode="dark"] .roamjs-query-page span[style*="color: #888"],
+[data-color-mode="dark"] .roamjs-query-page span[style*="color:#888"] {
+  color: var(--cl-gray-400, #9ca3af) !important;
+}
+
+/* Override hardcoded #666 tertiary text color */
+.bp3-dark .roamjs-query-page div[style*="color: #666"],
+.bp3-dark .roamjs-query-page div[style*="color:#666"],
+.bp3-dark .roamjs-query-page span[style*="color: #666"],
+.bp3-dark .roamjs-query-page span[style*="color:#666"],
+[data-color-mode="dark"] .roamjs-query-page div[style*="color: #666"],
+[data-color-mode="dark"] .roamjs-query-page div[style*="color:#666"],
+[data-color-mode="dark"] .roamjs-query-page span[style*="color: #666"],
+[data-color-mode="dark"] .roamjs-query-page span[style*="color:#666"] {
+  color: var(--cl-gray-500, #6b7280) !important;
+}
+
+/* Override hardcoded #ddd border color on th elements */
+.bp3-dark .roamjs-query-page th[style*="border-bottom: 1px solid #ddd"],
+.bp3-dark .roamjs-query-page th[style*="border"],
+.bp3-dark .roamjs-query-page th,
+[data-color-mode="dark"] .roamjs-query-page th[style*="border-bottom: 1px solid #ddd"],
+[data-color-mode="dark"] .roamjs-query-page th[style*="border"],
+[data-color-mode="dark"] .roamjs-query-page th {
+  border-color: var(--cl-gray-600, #4b5563) !important;
+  background: var(--cl-gray-800, #1f2937) !important;
+  color: var(--co-main, var(--cl-gray-125, #e0e0e0)) !important;
+}
+
+/* Override hardcoded #f1f1f1 border color on td elements */
+.bp3-dark .roamjs-query-page td[style*="border-top: 1px solid #f1f1f1"],
+.bp3-dark .roamjs-query-page td[style*="border"],
+[data-color-mode="dark"] .roamjs-query-page td[style*="border-top: 1px solid #f1f1f1"],
+[data-color-mode="dark"] .roamjs-query-page td[style*="border"] {
+  border-color: var(--cl-gray-700, #374151) !important;
+}
+
+/* Override hardcoded #eee border on evidence cards */
+.bp3-dark .roamjs-query-page div[style*="border: 1px solid #eee"],
+.bp3-dark .roamjs-query-page div[style*="border:1px solid #eee"],
+[data-color-mode="dark"] .roamjs-query-page div[style*="border: 1px solid #eee"],
+[data-color-mode="dark"] .roamjs-query-page div[style*="border:1px solid #eee"] {
+  border-color: var(--cl-gray-600, #4b5563) !important;
+}
+
+/* Generic override for any element in query results with inline color/background */
+.bp3-dark .roamjs-query-page [style*="background: #f"],
+.bp3-dark .roamjs-query-page [style*="background:#f"],
+.bp3-dark .roamjs-query-page [style*="background-color: #f"],
+.bp3-dark .roamjs-query-page [style*="background-color:#f"],
+[data-color-mode="dark"] .roamjs-query-page [style*="background: #f"],
+[data-color-mode="dark"] .roamjs-query-page [style*="background:#f"],
+[data-color-mode="dark"] .roamjs-query-page [style*="background-color: #f"],
+[data-color-mode="dark"] .roamjs-query-page [style*="background-color:#f"] {
+  background: var(--cl-gray-800, #1f2937) !important;
+  background-color: var(--cl-gray-800, #1f2937) !important;
+}
+
+/* Force all text in query results to inherit proper dark mode color */
+.bp3-dark .roamjs-query-page table *,
+[data-color-mode="dark"] .roamjs-query-page table * {
+  color: var(--co-main, var(--cl-gray-125, #e0e0e0)) !important;
+}
+
+/* But restore link colors */
+.bp3-dark .roamjs-query-page table a,
+.bp3-dark .roamjs-query-page table .rm-page-ref,
+[data-color-mode="dark"] .roamjs-query-page table a,
+[data-color-mode="dark"] .roamjs-query-page table .rm-page-ref {
+  color: var(--cl-blue-400, #60a5fa) !important;
+}
+
 /* Striped table rows */
 .bp3-dark .roamjs-query-page .bp3-html-table-striped tbody tr:nth-child(odd),
 .bp4-dark .roamjs-query-page .bp4-html-table-striped tbody tr:nth-child(odd),
